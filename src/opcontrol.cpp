@@ -149,8 +149,8 @@ void opcontrol() {
 				PreFlywheelMotor2 = 0;
 				if(Joystick.get_digital(DIGITAL_R1))
 				{
-					PreFlywheelMotor1 = 80;
-					PreFlywheelMotor2 = 80;
+					PreFlywheelMotor1 = 115;
+					PreFlywheelMotor2 = 115;
 					while(Joystick.get_digital(DIGITAL_R1))
 					{
 						pros::delay(10);
@@ -158,8 +158,8 @@ void opcontrol() {
 				}
 				else if(Joystick.get_digital(DIGITAL_L1))
 				{
-					PreFlywheelMotor1 = -80;
-					PreFlywheelMotor2 = -80;
+					PreFlywheelMotor1 = -115;
+					PreFlywheelMotor2 = -115;
 					while(Joystick.get_digital(DIGITAL_L1))
 					{
 						pros::delay(10);
